@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ahmad Amro - Full-Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ahmad Amro — Full-Stack Web Developer. Frontend-focused execution, UI replication, and AI demos."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ahmad Amro — Portfolio" />
+    <meta
+      property="og:description"
+      content="Frontend execution, UI replication, and AI demos."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og.png" />
+
+    <link rel="icon" type="image/png" href="./assets/ahmad.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- system font stack is fine; this is optional -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand-logo"><img src="./assets/ahmad1.png" alt="Ahmad Amro" /></span>
+          
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">
+            Theme
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal is-in">
+            <div class="badge">
+              Full-Stack Web Developer • Frontend + Growth Mindset
+            </div>
+
+            <h1 class="h1">
+              I build clean, production-ready UIs and ship fast.
+            </h1>
+
+            <p class="lead">
+              Frontend execution, UI replication, and AI demos that feel like real products.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#work">View work</a>
+              <a class="btn btn-secondary" href="#contact">Contact</a>
+              <a class="btn btn-ghost btn-resume" href="./assets/resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
+            </div>
+
+            <div class="meta-row">
+              <a class="meta-link" href="https://github.com/a7amr" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="meta-link" href="https://huggingface.co/a7madAmro" target="_blank" rel="noreferrer">Hugging Face</a>
+              <button id="copyEmailBtn" class="meta-link" type="button" aria-label="Copy email">
+                Copy email
+              </button>
+              <span id="copyToast" class="toast" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Quick info">
+            <div class="card">
+              <div class="card-top">
+                <div class="avatar"><img src="./assets/ahmad1.png" alt="Ahmad Amro" /></div>
+                <div>
+                  <div class="card-title">Available for roles</div>
+                  <div class="card-sub">Frontend • Full-stack • UI </div>
+                </div>
+              </div>
+
+              <div class="card-list">
+                <div class="row">
+                  <span class="k">Email</span>
+                  <span class="v"><a href="mailto:Ahmad.amro.dev@gmail.com">Ahmad.amro.dev@gmail.com</a></span>
+                </div>
+                <div class="row">
+                  <span class="k">Phone</span>
+                  <span class="v"><a href="tel:+12194248304">(219) 424-8304</a></span>
+                </div>
+                <div class="row">
+                  <span class="k">Focus</span>
+                  <span class="v">UI states, structure, maintainability</span>
+                </div>
+              </div>
+
+              <div class="card-actions">
+                <a class="btn btn-secondary" href="#contact">Reach out</a>
+                <a class="btn btn-ghost" href="#work">See projects</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 class="h2">Selected Work</h2>
+            <p class="muted">
+              A few projects that show execution depth, UI quality, and shipping discipline.
+            </p>
+          </div>
+
+          <div class="toolbar reveal reveal-delay-1">
+            <input
+              id="search"
+              class="search"
+              type="search"
+              placeholder="Search projects…"
+              autocomplete="off"
+            />
+            <div class="filters" role="group" aria-label="Filter projects">
+              <button class="chip is-active" data-filter="all" type="button">All</button>
+              <button class="chip" data-filter="frontend" type="button">Frontend</button>
+              <button class="chip" data-filter="ai" type="button">AI demos</button>
+              <button class="chip" data-filter="production" type="button">Production</button>
+            </div>
+          </div>
+
+          <div id="projects" class="grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about-copy">
+            <h2 class="h2">About</h2>
+            <p class="body">
+              I focus on building modern interfaces that are fast, clean, and maintainable.
+              I care about the details: component structure, UI states, and shipping reliably.
+            </p>
+
+          </div>
+
+          <div class="panel">
+            <h3 class="h3">What you get working with me</h3>
+            <ul class="list">
+              <li>Pixel-focused UI with strong UX clarity</li>
+              <li>Fast iteration without messy code</li>
+              <li>Production mindset: edge cases + UI states</li>
+              <li>Deployable outcomes (not just prototypes)</li>
+            </ul>
+          </div>
+            <div class="skill-groups">
+              <div class="skill-group">
+                <div class="skill-title">Frontend</div>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript (ES6+)</span>
+                  <span class="tag">React (hooks)</span>
+                  <span class="tag">Responsive UI</span>
+                  <span class="tag">Accessibility (WCAG)</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <div class="skill-title">UI/UX & Execution</div>
+                <div class="tags">
+                  <span class="tag">UX clarity</span>
+                  <span class="tag">Figma to build</span>
+                  <span class="tag">UI replication</span>
+                  <span class="tag">Component structure</span>
+                  <span class="tag">Design systems</span>
+                  <span class="tag">Edge states</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <div class="skill-title">Web Platforms</div>
+                <div class="tags">
+                  <span class="tag">CMS architecture</span>
+                  <span class="tag">Webflow CMS</span>
+                  <span class="tag">Content governance</span>
+                  <span class="tag">Forms + validation</span>
+                  <span class="tag">SEO basics</span>
+                  <span class="tag">Analytics (basic)</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <div class="skill-title">Backend / Data (supporting)</div>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">REST APIs</span>
+                  <span class="tag">JSON</span>
+                  <span class="tag">Data validation</span>
+                  <span class="tag">ETL basics</span>
+                </div>
+              </div>
+
+              <div class="skill-group">
+                <div class="skill-title">Shipping</div>
+                <div class="tags">
+                  <span class="tag">Git/GitHub</span>
+                  <span class="tag">Documentation</span>
+                  <span class="tag">QA across devices</span>
+                  <span class="tag">Performance basics</span>
+                  <span class="tag">Deployment</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact">
+          <div class="contact-card">
+            <h2 class="h2">Contact</h2>
+            <p class="muted">
+              Send a message and tell me what you’re building (role, stack, timeline).
+            </p>
+
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:Ahmad.amro.dev@gmail.com">
+                Email me
+              </a>
+              <a class="btn btn-secondary" href="https://github.com/a7amr" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="btn btn-ghost" href="https://huggingface.co/a7madAmro" target="_blank" rel="noreferrer">
+                Hugging Face
+              </a>
+            </div>
+          </div>
+
+          <div class="smallprint">
+            <p class="muted">
+              © <span id="year"></span> Ahmad Amro. Built for speed and clarity.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span class="muted">Deploy: GitHub Pages</span>
+        <a class="muted" href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
